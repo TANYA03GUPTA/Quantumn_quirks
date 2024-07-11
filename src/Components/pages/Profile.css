@@ -1,0 +1,87 @@
+.profile-container {
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2vw;
+}
+
+.profile-nav {
+  width: 15%;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.profile-nav h3 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.profile-nav ul {
+  list-style-type: none;
+  padding: 0;
+  border-right: 1px solid #ddd;
+  text-align: left;
+}
+
+.profile-nav ul li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.profile-nav hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.profile-details {
+  width: 40%;
+  padding-right: 20px;
+}
+
+.profile-details h2 {
+  margin-bottom: 20px;
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.details-box {
+  padding: 20px;
+}
+
+.profile-3dmodel {
+  width: 40%;
+  height: 500px;
+}
+
+.edit-button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.edit-button:hover {
+  background-color: #e73370;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 300px; /* Set a max width to make the video vertical */
+  overflow: hidden;
+  position: relative;
+  padding-top: 177.78%; /* 16:9 aspect ratio */
+}
+
+.vertical-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 85%;
+  height: 56%;
+  transform: translateX(-50%);
+  object-fit: cover; /* This will crop the video to fit the container */
+}
