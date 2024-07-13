@@ -2,7 +2,8 @@
   margin-top: 8%;
   display: flex;
   justify-content: space-between;
-  padding: 20px 2vw;
+  padding: 0 2vw;
+  background-color: #fefefe;
 }
 
 .profile-nav {

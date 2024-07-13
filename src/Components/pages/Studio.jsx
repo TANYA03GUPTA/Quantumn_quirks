@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { Footer } from "../Footer/Footer";
 import { Carousel1 } from "../Home/HomeSlide";
 import "../pages/studio.css";
+import { Spin } from "./Spin";
 
 export const Studio = () => {
   return (
@@ -46,10 +47,11 @@ export const Studio = () => {
             <h3>Come daily to win More excitning casback and rewards!!!</h3>
             <button className="spin-btn">Spin for Rewards</button>
           </div>
-          <div class="right-side">
+          <div className="right-side">
             <div id="spin-wheel">
-              <img src="images/Spin.png" />
-              {/*<div className="video-player">
+              <Spin />
+              {/*<img src="images/Spin.png" />
+             <div className="video-player">
                 <video controls>
                   <source src="./images/spin.mp4" type="video/mp4" />
                   Your browser does not support the video tag or the file format
@@ -80,7 +82,9 @@ export const Studio = () => {
               exclusiv
             </p>
             <h3>Come daily to win More excitning cashback & rewards!!!</h3>
-            <button>Play quiz</button>
+            <Link to="/quiz">
+              <button className="btn-quiz">Play quiz</button>
+            </Link>
           </div>
         </section>
       </Container>

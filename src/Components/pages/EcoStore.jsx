@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./Ecostore.css";
 import { Footer } from "../Footer/Footer";
 
@@ -14,7 +15,7 @@ export const EcoStore = () => {
           </h1>
         </div>
         <div className="image-container">
-          <img src="images/eco3.jpg" alt="Clothing Swap" />
+          <img src="images/tree00.png" alt="Clothing Swap" />
           <p className="photo-credit">photo: Online Sources</p>
         </div>
       </section>
@@ -26,9 +27,12 @@ export const EcoStore = () => {
           substantial carbon emissions, and results in a staggering amount of
           textile waste ending up in landfills. This relentless pace of
           production and disposal depletes natural resources and harms
-          ecosystems globally. Myntra to the rescue
+          ecosystems globally. Myntra to the rescue!!!
         </p>
-        <img src="/images/eco4.png"></img>
+        <Link to="/Eco2">
+          <img src="/images/eco4.png"></img>
+        </Link>
+
         <p>
           Myntra cares deeply about the planet and brings you a one-of-a-kind
           opportunity to be a green fashionista. Our new features allow you to
@@ -44,18 +48,15 @@ export const EcoStore = () => {
           <div className="feature-box">
             <h2>Sustainable Fashion</h2>
             <p>
-              Myntra is at the forefront of the sustainable fashion movement,
-              offering a curated selection of eco-friendly and ethically
-              produced clothing and accessories. Our "Green Edit" features
-              brands that prioritize sustainable materials, fair labor
-              practices, and low-impact production methods.
+              Our "Green Edit" features brands that prioritize sustainable
+              materials, fair labor practices, and low-impact production
+              methods.
             </p>
             <p>
               Through our "Circular Fashion" initiative, we facilitate clothing
-              recycling and upcycling, reducing textile waste.
-              <br /> Our new features allow you to embrace eco-friendly fashion
-              without compromising on style. With Myntra's special services, you
-              can swap rather than shop, reducing
+              recycling and upcycling, reducing textile waste. Our new features
+              allow you to embrace eco-friendly fashion without compromising on
+              style.
             </p>
             <img
               src="images/eco61.png"
@@ -80,29 +81,21 @@ export const EcoStore = () => {
               We've gamified the return process with our "Responsible Returns"
               reward system, where customers earn points for choosing green
               return methods or opting for store credit instead of refunds.
-              These points can be redeemed for exclusive sustainable products or
-              used to support environmental initiatives. Through these
-              initiatives, we're making the return process not just hassle-free,
-              but also environmentally conscious and rewarding.
             </p>
           </div>
           <div className="feature-box">
             <h2>Organic Priority</h2>
             <p>
-              At Myntra, we prioritize the Earth by promoting eco-friendly
-              practices and offering a curated selection of organic clothing.Our
-              "Organic First" initiative gives prominence to clothing made from
-              certified organic materials, free from harmful pesticides and
+              Our "Organic First" initiative gives prominence to clothing made
+              from certified organic materials, free from harmful pesticides and
               chemicals. We've developed a rigorous vetting process for organic
               brands, ensuring that products meet the highest standards of
               sustainability and quality.
-              <br />
-              Shop with confidence knowing purchase contributes to reducing the
-              fashion industry's environmental footprint. Through partnerships
-              with organic cotton farmers and manufacturers, we're working to
-              increase the availability and affordability of organic fashion
-              items.Embrace sustainability with Organic Priority at Myntra
-              today!.
+            </p>
+            <p>
+              Through partnerships with organic cotton farmers and
+              manufacturers, we're working to increase the availability and
+              affordability of organic fashion items.
             </p>
             <img
               src="images/eco6.png"
@@ -125,22 +118,59 @@ export const EcoStore = () => {
           that prioritize the environment with green tags and certified organic
           options.{" "}
         </p>
+        <div className="brwn-img">
+          <img src="images/ecobrwn.png " />
+        </div>
 
         <p>
-          By choosing these products, you actively support sustainable practices
-          in the fashion industry. As you accumulate Green Coins through these
-          initiatives, you pave the way for meaningful rewards. Convert your
-          Green Coins into cashback, exclusive rewards, or even insider points,
-          making your sustainable choices more rewarding than ever before. Join
-          us today and become a Green Warrior with Myntra.
-          <br />
-          <br />
+          Our innovative feature is designed to encourage and reward sustainable
+          shopping habits among consumers. By integrating Green Points and the
+          EcoMeter with user order histories, we aim to make eco-friendly
+          purchasing both impactful and rewarding. Here's how it works: for
+          every environmentally friendly product you buy, you earn Green Points.
+          These points are tracked in your EcoMeter, providing a visual
+          representation of your sustainable contributions. As the EcoMeter
+          fills up, users can see their positive impact on the planet while
+          unlocking special Insider Points and exclusive privileges. These perks
+          include cashback, unique rewards, and even a chance to be featured on
+          our cover pages. Our goal is to motivate and celebrate those who
+          choose to shop sustainably, turning every purchase into a step towards
+          a greener future. This feature not only promotes eco-friendly choices
+          but also enhances user engagement and loyalty by making sustainability
+          rewarding and exciting.
+        </p>
+        <p>
           Together, let's make a positive impact on a global scale, fostering a
-          greener, more sustainable future for generations to come. Start your
-          green journey with Myntra and lead the way towards a more sustainable
-          world.
+          greener, more sustainable future for generations to come.Embrace
+          sustainability with Organic Priority at Myntra today!.
         </p>
       </section>
+      {/*}     <section className="info-3">
+        <div className="top-info">
+          <div className="left-text">
+            <ul>
+              <li>
+                By integrating Green Points and the EcoMeter with user order
+                histories, we aim to make eco-friendly purchasing both impactful
+                and rewarding.
+              </li>
+              <li>
+                Here's how it works: for every environmentally friendly product
+                you buy, you earn Green Points.
+              </li>
+              <li>
+                These points are tracked in your EcoMeter, providing a visual
+                representation of your sustainable contributions.
+              </li>
+            </ul>
+          </div>
+          <div className="img-cont">
+            <img src="images/eco-mtr.jpeg" />
+          </div>
+        </div>
+        <div className="bottom-info"></div>
+        </section>*/}
+
       <section className="info-btn">
         <button>Start Your Green Journey</button>
       </section>

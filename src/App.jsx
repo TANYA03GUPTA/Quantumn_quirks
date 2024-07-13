@@ -7,6 +7,7 @@ import { Studio } from "../src/Components/pages/Studio";
 import { EcoStore } from "../src/Components/pages/EcoStore";
 import { Profile } from "../src/Components/pages/Profile";
 import { Trend } from "../src/Components/pages/Trend";
+import { Fshnquiz } from "../src/Components/pages/Fshnquiz";
 import { Navbarpayment } from "./Components/CartComponents/components/navbarfinal/Paymentnavbar";
 
 import { useEffect } from "react";
@@ -54,9 +55,9 @@ function App() {
         <Route path="/Profile" element={<Profile></Profile>}></Route>
         <Route path="/EcoStore" element={<EcoStore></EcoStore>}></Route>
         <Route path="/Trend" element={<Trend></Trend>}></Route>
+        <Route path="/quiz" element={<Fshnquiz></Fshnquiz>}></Route>
       </Routes>
     </div>
   );
 }
-
 export default App;

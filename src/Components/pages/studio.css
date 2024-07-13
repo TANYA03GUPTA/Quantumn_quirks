@@ -164,8 +164,7 @@ ul {
   border-radius: 5%;
 }
 #spin-wheel {
-  position: relative;
-  margin: 1vh 1vw;
+  margin: 2vh 2vw;
 }
 .spin-btn {
   background-color: #f86319e8;

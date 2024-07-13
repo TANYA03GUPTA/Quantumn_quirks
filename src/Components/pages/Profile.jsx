@@ -62,8 +62,8 @@ export const Profile = () => {
       </div>
       <div className="profile-3dmodel">
         <div className="video-wrapper">
-          <video className="vertical-video" controls>
-            <source src="images/mdl01.mkv" type="video/mp4" />
+          <video className="vertical-video" muted autoPlay loop>
+            <source src="images/avat.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

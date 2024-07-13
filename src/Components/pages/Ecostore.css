@@ -1,15 +1,15 @@
 .cointainer {
-  margin-top: 8%;
+  margin-top: 6.4%;
   background-color: #fff;
 }
 .swap-section {
   display: grid;
-  grid-template-columns: 6fr 4fr;
-  padding: 20px;
+  grid-template-columns: 5fr 5fr;
+  padding: 10px;
   background-color: #f0f4f3;
 }
 .info-section {
-  padding: 30px 0;
+  padding: 10px 0;
   text-align: justify;
 
   background-color: #fff;
@@ -76,21 +76,6 @@
   margin-bottom: 20px;
 }
 
-.find-loop-button {
-  font-size: 1em;
-  color: #fff;
-  background-color: #ff7f50;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.find-loop-button:hover {
-  background-color: #ff6347;
-}
-
 .image-container {
   display: flex;
   flex-direction: column;
@@ -124,6 +109,30 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: 5px 35px;
+}
+.info-3 {
+  margin-left: 7%;
+  margin-right: 7%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.top-info {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  padding: 10px 15px;
+  gap: 25px;
+}
+li {
+  font-size: 1.5 rem;
+  text-align: justify;
+}
+.top-info img-cont {
+  margin: 2vh 1vw;
+  padding: 5px 15px;
+}
+.top-info img {
+  width: 80%;
+  height: auto;
 }
 @media (max-width: 768px) {
   .swap-section {
@@ -183,6 +192,13 @@
   text-align: justify;
   margin: 0vw 1vw;
   margin-bottom: 10px;
+}
+.brwn-img {
+  margin: 5vh 12vw;
+}
+.brwn-img img {
+  width: 100%;
+  height: 48%;
 }
 
 @media (max-width: 768px) {
