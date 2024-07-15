@@ -31,7 +31,9 @@ export const Spin = () => {
           setMustSpin(false);
         }}
       />
-      <button onClick={handleSpinClick}>SPIN</button>
+      <button className="spin-btn" onClick={handleSpinClick}>
+        Spin for Rewards
+      </button>
     </>
   );
 };

@@ -11,12 +11,12 @@ export const EcoStore = () => {
           <h1 className="headline">
             <span className="swap">Swap</span>
             <br />
-            <span className="dont">don't Shop !</span>
+            <span className="dont">And Shop !</span>
           </h1>
         </div>
         <div className="image-container">
           <img src="images/tree00.png" alt="Clothing Swap" />
-          <p className="photo-credit">photo: Online Sources</p>
+          {/* <p className="photo-credit">photo: Online Sources</p>*/}
         </div>
       </section>
       <section className="info-section">

@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "../pages/quiz.css";
 import { Footer } from "../Footer/Footer";
+import { addQuizData } from "../../firebase";
 
 const questions = [
   {
@@ -79,7 +80,41 @@ const questions = [
 ];
 
 export const Fshnquiz = () => {
-  const currentQuestion = 0;
+  const handleQuizSubmission = (e) => {
+    // Prevent default behaviour, since form submission is handled through JavaScript
+    e.preventDefault();
+
+    // Gather the data from the form and store it in an array
+    let quizData = new FormData(e.target);
+    let submission = [];
+    for (let [question, answer] of quizData.entries()) {
+      submission.push({
+        question,
+        answer,
+      });
+    }
+    console.log(submission);
+
+    addQuizData({
+      time: new Date(),
+      answers: submission,
+    })
+      .then((result) => {
+        // If submission is inserted successfully, notify the user
+        if (result.id) {
+          console.log(result);
+          alert("Response saved successfully!");
+          e.target.reset(); // Reset the form
+        } else throw result;
+      })
+      .catch((error) => {
+        console.error(error);
+        alert(
+          "An error occured while submitting the quiz! Make sure that you are connected to the internet."
+        );
+      });
+    return;
+  };
   return (
     <>
       <Container>
@@ -110,7 +145,7 @@ export const Fshnquiz = () => {
           </section>
         </section>
         <section className="main-bod">
-          <section className="quiz-ques">
+          <form onSubmit={handleQuizSubmission} className="quiz-ques">
             <h2>Play And Find Out !!</h2>
             <hr />
             <div className="btn-row">
@@ -124,19 +159,22 @@ export const Fshnquiz = () => {
                   <div className="question-count">
                     <h4 className="question-text">
                       <span>Ques {[currentQuestion + 1]}: </span>
-                      {questions[currentQuestion].questionText}
+                      {ques.questionText}
                     </h4>
                   </div>
                   <div className="answer-section">
-                    {questions[currentQuestion].options.map((option, index) => (
+                    {ques.options.map((option, index) => (
                       <div key={index} className="option-container">
                         <input
                           type="radio"
-                          id={`option${index}`}
-                          name="satisfaction"
+                          required
+                          id={`${currentQuestion}option${index}`}
+                          name={ques.questionText}
                           value={option}
                         />
-                        <label htmlFor={`option${index}`}>{option}</label>
+                        <label htmlFor={`${currentQuestion}option${index}`}>
+                          {option}
+                        </label>
                       </div>
                     ))}
                   </div>
@@ -144,7 +182,7 @@ export const Fshnquiz = () => {
               ))}
             </section>
             <button className="submit-btn">Submit Your Quiz</button>
-          </section>
+          </form>
           <section className="ldr-award">
             <section className="ldrboard">
               <h3>Leaderboard</h3>

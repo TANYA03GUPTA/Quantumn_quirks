@@ -45,7 +45,7 @@ export const Studio = () => {
               benefits.
             </p>
             <h3>Come daily to win More excitning casback and rewards!!!</h3>
-            <button className="spin-btn">Spin for Rewards</button>
+            {/*<button className="spin-btn">Spin for Rewards</button>*/}
           </div>
           <div className="right-side">
             <div id="spin-wheel">
@@ -68,20 +68,21 @@ export const Studio = () => {
           <div class="righty">
             <h2>Fashion Quiz</h2>
             <p>
-              Spin the Wheel and win exciting reward points! Test your luck with
-              our interactive game where each spin could bring you closer to
-              amazing rewards. Whether you're aiming for cashback, discounts, or
-              exclusive offers, every spin counts towards unlocking great
-              benefits.
+              Unlock your unique style with Myntra fwd's Fashion Vibes quiz!
+              Don't worry, we've got you covered. From finding the perfect color
+              palette to matching your vibe with the latest trends, this
+              hands-on quiz is your gateway to fashion self-discovery.
             </p>
-
             <p>
-              in the Wheel and win exciting reward points! Test your luck with
-              our interactive game where each spin could bring you closer to
-              amazing rewards. Whether you're aiming for cashback, discounts, or
-              exclusiv
+              Tailored for the GenZ crowd, it's packed with fun questions about
+              your preferences and style instincts. Play through different
+              categories like 'Match Vibe & Wardrobe' and 'Find Your Aesthetic'
+              to pinpoint your fashion personality. Ready to level up your style
+              game?
             </p>
-            <h3>Come daily to win More excitning cashback & rewards!!!</h3>
+            <h3>
+              Play and find out where you stand on our fashion leaderboard
+            </h3>
             <Link to="/quiz">
               <button className="btn-quiz">Play quiz</button>
             </Link>

@@ -14,7 +14,7 @@ const Div = styled.nav`
   top: 0;
   margin-left: 5%;
   right: 0;
-  z-index: 1;
+  z-index: 10;
   align-items: center;
   background-color: #fffffe;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
