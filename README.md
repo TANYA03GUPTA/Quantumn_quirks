@@ -1,6 +1,6 @@
 ## Fashion Pulse
-
-Fashion pUlse provides engament enhancements for e-commerce c An Online Shopping Site for Fashion &amp; Lifestyle in India which brings you a variety of footwear, Clothing, Accessories and lifestyle products.
+Team Quantum Quirks from UIET Chandigarh is tackling the challenge of revolutionizing fashion engagement for GenZ consumers. Our innovative approach focuses on creating an interactive, sustainability-driven platform that transforms passive scrollers into active participants in the fashion ecosystem. By leveraging cutting-edge technology and gamification, we're developing features like the 'Fashion Vibes' quiz to personalize the shopping experience and promote eco-conscious choices. Our solution aims to foster a vibrant community of young fashion enthusiasts while addressing the critical need for sustainable practices in the industry. With Quantum Quirks' unique blend of tech-savvy and fashion-forward thinking, we're set to redefine how GenZ interacts with fashion in the digital age.
+Fashion pUlse provides engament enhancements for e-commerce  an Online Shopping Site for Fashion ,Lifestyle in India which brings you a variety of footwear, Clothing, Accessories and lifestyle products.
 
 ### Project Description
 
